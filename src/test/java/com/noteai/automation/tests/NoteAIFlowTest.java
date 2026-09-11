@@ -9,14 +9,7 @@ import com.noteai.automation.pages.RecordingPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-/**
- * End-to-end walk-through for an already-logged-in user: record a (short)
- * audio note, inspect its detail/transcript view, generate flashcards for
- * it via Note Tools, then file it into a new folder.
- *
- * Steps run in order (see each method's `dependsOnMethods`) since each one
- * builds on app state left behind by the previous one.
- */
+
 public class NoteAIFlowTest extends BaseTest {
 
     private static final String FOLDER_NAME = "QA " + System.currentTimeMillis();
