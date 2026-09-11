@@ -1,0 +1,30 @@
+# Appium server
+appium.url=http://127.0.0.1:4723
+
+# --- Device (fill in with your real iPhone's values) ---
+# Find your UDID: run `xcrun xctrace list devices` while the iPhone is connected,
+# or `idevice_id -l` (from libimobiledevice) once the phone is unlocked and trusted.
+device.udid=CHANGE_ME_UDID
+device.name=CHANGE_ME_DEVICE_NAME
+platform.version=CHANGE_ME_IOS_VERSION
+
+# --- App under test ---
+# Real bundle id of the "Note AI" app from the App Store. Find it after installing via:
+# `ideviceinstaller -l` (grep for the app name) or in Xcode > Devices and Simulators > Installed Apps.
+app.bundleId=CHANGE_ME_BUNDLE_ID
+
+# --- Code signing (needed for WebDriverAgent to run on a real device) ---
+# Your Apple Developer Team ID (Free personal team is fine, certs just expire after 7 days).
+# Xcode > Settings > Accounts > (your Apple ID) > Team > "Team ID".
+wda.xcodeOrgId=CHANGE_ME_TEAM_ID
+wda.xcodeSigningId=Apple Development
+wda.localPort=8100
+
+# --- Timeouts ---
+wda.launchTimeout=180000
+newCommandTimeout=300
+
+# --- Test data ---
+# Display name of an audio file that must already be reachable from the
+# iOS file picker (On My iPhone / iCloud Drive) on the test device.
+audio.testFileName=test-audio.m4a

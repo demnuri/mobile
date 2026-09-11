@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="NoteAISuite" verbose="1">
+    <test name="NoteAIFlow">
+        <classes>
+            <class name="com.noteai.automation.tests.NoteAIFlowTest"/>
+        </classes>
+    </test>
+</suite>
